@@ -29,7 +29,6 @@ public double[] GetSolution(){
     if (D==0){
         x1 = (-this.B)/(2*this.A);
         Solution[0] = x1;
-        Solution[1] = null;
     }
     if (D<0){
         System.out.println("При данных значениях коэффициентов A, B, C невозможно найти значение в пределах действительных чисел");
