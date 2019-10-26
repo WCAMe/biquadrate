@@ -12,7 +12,7 @@ public BiquadraticEquation(double a, double b, double c){
 
 private double GetDiscriminant(){
  double D;
-    D = this.B*this.B - 4*this.A*this.C;
+    D = B*B - 4*A*C;
  return D;
 }
 
@@ -21,13 +21,13 @@ public double[] GetSolution(){
     double x1,x2;
     double D = this.GetDiscriminant();
     if (D>0){
-        x1 = (-this.B + Math.sqrt(D))/(2*this.A);
-        x2 = (-this.B - Math.sqrt(D))/(2*this.A);
+        x1 = (-B + Math.sqrt(D))/(2*A);
+        x2 = (-B - Math.sqrt(D))/(2*A);
         Solution[0] = x1;
         Solution[1] = x2;
     }
     if (D==0){
-        x1 = (-this.B)/(2*this.A);
+        x1 = (-B)/(2*A);
         Solution[0] = x1;
     }
     if (D<0){
